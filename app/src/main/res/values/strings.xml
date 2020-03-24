@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DiceRoller-Jay</string>
+    <string name="sides_4">4 faces</string>
+    <string name="sides_6">6 faces</string>
+    <string name="sides_8">8 faces</string>
+    <string name="sides_10">10 faces</string>
+    <string name="sides_12">12 faces</string>
+    <string name="sides_20">20 faces</string>
+    <string name="banner">Please select one dice with following number of faces.</string>
+    <string name="roll_2">Roll Twice</string>
+    <string name="roll">Roll</string>
+</resources>

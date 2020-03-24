@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/banner"
+                android:layout_span="2"
+                android:text="@string/banner"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_margin="15dp">
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+            <RadioGroup
+                android:id="@+id/diceFaces"
+                android:layout_span="2"
+                android:checkedButton="@id/face_6"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <RadioButton
+                    android:id="@+id/face_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/sides_4" />
+
+                <RadioButton
+                    android:id="@+id/face_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/sides_6" />
+
+                <RadioButton
+                    android:id="@+id/face_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/sides_8" />
+
+                <RadioButton
+                    android:id="@+id/face_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sides_10"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <RadioButton
+                    android:id="@+id/face_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sides_12"
+                    android:layout_marginBottom="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/face_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sides_20"
+                    android:layout_marginBottom="5dp"/>
+
+                <CheckBox
+                    android:id="@+id/doubleRoll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/roll_2" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:text="@string/roll"
+                android:layout_margin="15dp">
+            </Button>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/displayResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="end"
+                android:textSize="80dp"
+                android:layout_margin="15dp">
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
